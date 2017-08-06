@@ -23,6 +23,7 @@ git clone https://github.com/niemisami/react-redux-base.git
 ```
 ```
 // Install dependencies
+npm install -g babel-cli 
 npm install
 ```
 ```

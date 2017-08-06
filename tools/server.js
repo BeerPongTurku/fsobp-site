@@ -27,7 +27,7 @@ import configureStore from '../src/store/configureStore';
 import indexTemplate from './assets/indexTemplate';
 import routes from '../src/routes';
 /**BASIC SERVER INITIALIZATION */
-const port = 3000;
+const port = 3000 || process.env.PORT;
 const app = express();
 app.use(favicon(path.join(__dirname, 'assets', 'public', 'favicon.png')));
 app.use(express.static(path.resolve(__dirname, '../src')));
