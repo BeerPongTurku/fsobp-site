@@ -5,37 +5,34 @@ import { changeLanguage } from '../actions/contentActions';
 
 
 const Home = ({ content }) => {
-  const { bodyText, organizers, abpLink, bptLink } = content;
-  const createMarkup = text => {
-    return { __html: text }
-  }
+  const { bodyText, organizers, abpLink, bptLink} = content;
 
   return (
     <div className="page-wrapper text-center line-height-high" >
       <div className="row center-xs" >
-        <div className="col-xs-12 col-sm-8 col-md-5 padding-1">
-          <Link to="/"><img className="img img-responsive margin-top-2 margin-bottom-2" alt="FSOBP" src="public/images/fsobp_logo_border_500.png" /></Link>
+        <div className="col-sm-8 col-md-6">
+          <Link to="/"><img className="img img-responsive margin-auto margin-2" alt="FSOBP" src="public/images/fsobp_logo_border_500.png" /></Link>
           <h1 className="text-center margin-1">Finnish Series of Beer Pong 2017</h1>
           {bodyText.map((paragraph, index) => (
             <div
               key={index}
-              className="text-left markup-container"
+              className="text-left"
             >
-              <div dangerouslySetInnerHTML={createMarkup(paragraph)} />
+              <p>{paragraph}</p>
               {index === bodyText.length - 1 ? '' : <hr />}
             </div>
           ))}
           <div className="row center-xs margin-top-2">
             <div className="text-center">
               <h3 className="title">{organizers}</h3>
-              <div className="row">
+              <div className="flex-container">
                 {/*Aalto Beer Pong*/}
-                <div className="col-xs-12 col-sm-6">
+                <div className="flex-column">
                   <a className=" margin-1" href={abpLink} target="_blank" rel="noopener noreferrer">
                     <img className="bp-images" src="public/images/aalto_logo_500.png" />
                   </a>
                 </div>
-                <div className="col-xs-12 col-sm-6">
+                <div className="flex-column">
                   <a className="margin-1" href={bptLink} target="_blank" rel="noopener noreferrer">
                     <img className="bp-images" src="public/images/bpt_logo.png" />
                   </a>

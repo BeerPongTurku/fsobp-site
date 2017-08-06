@@ -12,8 +12,6 @@ export default (
   <Route>
     <Route component={App}>
       <Route path="/" component={Home} />
-      <Route path="/event" component={Home} />
-      <Route path="/contacts" component={Home} />
     </Route>
     <Route path="*" status={404} component={NotFound} />
   </Route>

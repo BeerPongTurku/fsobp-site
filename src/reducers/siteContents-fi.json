@@ -1,9 +1,10 @@
 {
   "displayFrontpage": true,
   "bodyText": [
-    "Tahdotko päästä loistamaan beer pong -taidoillasi? Miltä kuulostaisi matka ulkomaille pelaamaan tätä pallopeleistä jalointa?",
-    "Toiveisiisi on vastattu, sillä syksyllä 2017 Suomen suurimmat beer pong -yhdistykset Aalto Beer Pong ja Beer Pong Turku järjestävät yhteistyössä ensimmäistä kertaa historiassa Finnish Series of Beer Pong -turnauksen, jonka pääpalkintona on matka majoituksineen seuraavaan, alkuvuodesta 2018 järjestettävään European Series of Beer Pongiin.",
-    "Lisätietoja turnauksesta ja lipunmyynnistä luvassa kevään mittaan, pysy kuulolla!"
+    "Voita matka Itävaltaan pelaamaan beer pongia! Kyllä, luit oikein: Finnish Series of Beer Pong -turnauksen pääpalkintona on matka seuraavaan European Series of Beer Pongiin, joka järjestetään Itävallan Innsbruckissa 4.-7.1.2018. Palkinto kattaa osallistumismaksun sekä lentomatkat ja majoituksen kahdelle hengelle turnauksen ajaksi (yhteensä 500 euroon saakka).",
+    "Finnish Series of Beer Pong järjestetään lauantaina 14. lokakuuta Helsingin Club Capitalissa. Turnauksen lipunmyynti alkaa perjantaina 11.8. klo 12.00 osoitteessa: <a href='https://bailataan.fi/'>Bailataan.fi.</a>",
+    "Tässä ainutlaatuisessa turnauksessa early bird -lipun hinta on vain 20 € per tiimi. Paikkoja on rajoitetusti ja lipun hinta nousee 25 euroon 1.9. alkaen (mikäli paikkoja on vielä jäljellä), joten toimi nopeasti!",
+    "Turnaus pelataan ESOBP-turnauksen säännöillä, jotka poikkeavat hieman siitä, mihin on Aalto Beer Pongin ja Beer Pong Turun turnauksissa totuttu. Tutustuthan sääntöihin etukäteen <a href='http://www.esobp.com/en/beer-pong-rules.html'>täällä.</a>"
   ],
   "organizers": "Peleissä mukana",
   "contacts": "Yhteydenotot",
@@ -15,14 +16,6 @@
     {
       "text": "Etusivu",
       "location": "/"
-    },
-    {
-      "text": "Tapahtuma",
-      "location": "/event"
-    },
-    {
-      "text": "Yhteystiedot",
-      "location": "/contacts"
     }
   ]
 }
