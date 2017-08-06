@@ -7,14 +7,14 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import routes from './routes';
 import configureStore from './store/configureStore';
 import initialState from './reducers/initialState';
-import { hasUserAuthenticated } from './actions/authActions'
+import { loadContent } from './actions/contentActions'
 
 
 const store = configureStore(initialState);
 
 const history = syncHistoryWithStore(browserHistory, store);
 
-store.dispatch(hasUserAuthenticated());
+store.dispatch(loadContent());
 
 render(
   <Provider store={store}>

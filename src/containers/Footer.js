@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
+import { connect } from 'react-redux';
 
-const Footer = ({ siteContent }) => {
-  return (
+const Footer = ({ content }) => (
+  <footer className="sticky-footer">
+    <div className="flex-column text-center padding-2">
+      <p>FSOBP | 2017</p>
+      <p><b>{content.contacts}:</b></p>
+      <p><a className="mail-link" href={'mailto:' + content.contactInformation}>{content.contactInformation}</a></p>
+    </div>
+  </footer>
+)
 
-    <footer className="sticky-footer">
-      <div className="flex-column text-center padding-2">
-        <p>FSOBP | 2017</p>
-        <p><b>{siteContent.contacts}:</b></p>
-        <p><a className="mail-link" href={'mailto:' + siteContent.contactInformation}>{siteContent.contactInformation}</a></p>
-      </div>
-    </footer>
-  )
+Footer.propTypes = {
+  content: PropTypes.object.isRequired
 }
 
 
-export default Footer;
+const mapStateToProps = state => ({
+  content: state.content.siteContent
+});
+
+export default connect(mapStateToProps)(Footer);

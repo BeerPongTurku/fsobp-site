@@ -9,7 +9,7 @@
 #app {
     height: 100%;
 }
-  
+
 .app-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -106,14 +106,14 @@
     }
 }
 
-.navbar-fsobp p.language {
+p.language {
     padding: 1rem;
     display: inline-block;
     color: #b6b6b6;
     cursor: pointer;
 }
 
-.navbar-fsobp p.language.active {
+p.language.active {
     color: #f1f1f1;
 }
 
@@ -246,4 +246,14 @@
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+}
+
+.notFound {
+    text-align: center;
+    .title {
+        margin-top: 25%;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
 }

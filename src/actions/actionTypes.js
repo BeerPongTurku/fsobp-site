@@ -8,3 +8,8 @@ export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
 // UI
 export const TOGGLE_SNACKBAR = 'TOGGLE_SNACKBAR';
 
+
+// CONTENT
+export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
+export const LOAD_CONTENT = 'LOAD_CONTENT';
+
