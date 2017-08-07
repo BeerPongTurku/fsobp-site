@@ -6,11 +6,9 @@ import Snackbar from '../components/Snackbar';
 
 const App = ({ children }) => (
   <div className="app-container">
-    <div className="body-container">
-      <Header />
-      {children}
-      <Footer />
-    </div>
+    <Header />
+    {children}
+    <Footer />
     <Snackbar />
   </div>
 )
