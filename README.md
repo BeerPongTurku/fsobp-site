@@ -8,7 +8,7 @@ Ensure that [`npm`](https://docs.npmjs.com/getting-started/installing-node) is i
 #### JWT and MongoDB configurations
 > MongoDB is commented out from this project 
 
-1. Create a new file `tools/config.json`
+1. Create a new file `server/config.json`
 2. Add `dbUri` and `jwtSecret` values:
 ```
 {
