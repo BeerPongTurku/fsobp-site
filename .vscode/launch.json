@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "protocol": "legacy",
-      "program": "${workspaceRoot}/server/index.js",
+      "program": "${workspaceRoot}/tools/server.js",
       "stopOnEntry": false,
       "args": [],
       "cwd": "${workspaceRoot}",

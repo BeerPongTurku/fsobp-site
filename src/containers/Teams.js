@@ -16,16 +16,16 @@ const Teams = ({ content, teams }) => {
           <h1 className="margin-2">{teamsPage.header}</h1>
           <DangerousContent content={teamsPage.bodyText} />
           <ul id="teams-list">
-            {teams.map((team, index) =>
-            <li
-              key={team}
-            >
-              {index + 1}. {team}
-            </li>
-          )}
+            {teams.map(team =>
+              <li
+                key={team}
+              >
+                {team}
+              </li>
+            )}
           </ul>
-      </div>
-    </div >
+        </div>
+      </div >
     </div >
   )
 }
