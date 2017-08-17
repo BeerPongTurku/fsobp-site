@@ -8,6 +8,8 @@ import routes from './routes';
 import configureStore from './store/configureStore';
 import initialState from './reducers/initialState';
 import { loadContent } from './actions/contentActions'
+import { loadTeams } from './actions/teamActions';
+
 
 
 const store = configureStore(initialState);
@@ -15,6 +17,7 @@ const store = configureStore(initialState);
 const history = syncHistoryWithStore(browserHistory, store);
 
 store.dispatch(loadContent());
+store.dispatch(loadTeams());
 
 render(
   <Provider store={store}>

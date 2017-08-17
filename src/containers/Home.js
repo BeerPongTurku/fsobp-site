@@ -2,13 +2,11 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import { changeLanguage } from '../actions/contentActions';
+import DangerousContent from '../components/DangerousContent';
 
 
 const Home = ({ content }) => {
   const { bodyText, organizers, abpLink, bptLink } = content;
-  const createMarkup = text => {
-    return { __html: text }
-  }
 
   return (
     <div className="page-wrapper text-center line-height-high" >
@@ -21,7 +19,7 @@ const Home = ({ content }) => {
               key={index}
               className="text-left markup-container"
             >
-              <div dangerouslySetInnerHTML={createMarkup(paragraph)} />
+              <DangerousContent content={paragraph} />
               {index === bodyText.length - 1 ? '' : <hr />}
             </div>
           ))}

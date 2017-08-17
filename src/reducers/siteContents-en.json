@@ -16,6 +16,14 @@
     {
       "text": "Home",
       "location": "/"
+    },
+    {
+      "text": "Joukkueet",
+      "location": "/teams"
     }
-  ]
+  ],
+  "teamsPage": {
+    "header": "Teams",
+    "bodyText": "Oh gosh how many teams! Register your own team here <a href=https://bailataan.fi/#!/events/d053c0f1-a709-47b8-8527-a619a3c70b0e>Bailataan.fi</a>. Come and win the biggest Beer Pong tournament in Finland!"
+  }
 }

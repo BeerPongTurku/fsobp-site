@@ -1,0 +1,16 @@
+.team-page {
+    text-align: start;
+    ul#teams-list {
+        margin: 2rem 0;
+        li {
+            background: #fafafa;
+            color: #333;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            &:nth-child(odd) {
+                background: #0b1e38;
+                color: #f9f9f9;
+            }
+        }
+    }
+}
