@@ -7,7 +7,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const webpack = require('webpack');
 const path = require('path');
 
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = false; // process.env.NODE_ENV === 'production';
 // Development css works with hot module replacement which is not compatible with ExtractTextPlugin()
 const cssDev = [
   'style-loader',

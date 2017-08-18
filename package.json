@@ -2,7 +2,7 @@
   "name": "fsobp-site",
   "author": "Sami Nieminen",
   "version": "0.1.0",
-  "description": "simple Redux sample app",
+  "description": "Site for Finnish Series of Beer Pong",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -11,14 +11,15 @@
   "scripts": {
     "test": "mocha --watch --compilers js:babel-core/register ./test/**/*.spec.js",
     "start": "npm-run-all --parallel open:src lint:watch",
+    "open:src": "babel-node tools/server.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
-    "lint:watch": "npm run lint -- --watch",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "prod": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "clean": "rm -rf ./dist/*"
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
@@ -44,8 +45,10 @@
     "react-cookie": "^1.0.5",
     "react-dom": "^15.4.2",
     "react-favicon": "0.0.4",
+    "react-google-maps": "^7.1.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.7.0",
+    "react-router-dom": "^4.1.2",
     "react-router-redux": "^4.0.8",
     "react-select": "^1.0.0-rc.5",
     "react-tap-event-plugin": "^1.0.0",

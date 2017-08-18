@@ -11,7 +11,7 @@ const Home = ({ content }) => {
     <div className="page-wrapper text-center line-height-high" >
       <div className="row center-xs" >
         <div className="col-sm-8 col-md-6">
-          <Link to="/"><img className="img img-responsive margin-auto margin-2" alt="FSOBP" src="public/images/fsobp_logo_border_500.png" /></Link>
+          <Link to="/"><img className="img img-responsive margin-auto margin-2" alt="FSOBP" src="/images/fsobp_logo_border_500.png" /></Link>
           <h1 className="text-center margin-1">Finnish Series of Beer Pong 2017</h1>
           {bodyText.map((paragraph, index) => (
             <div
@@ -29,12 +29,12 @@ const Home = ({ content }) => {
                 {/*Aalto Beer Pong*/}
                 <div className="flex-column">
                   <a className=" margin-1" href={abpLink} target="_blank" rel="noopener noreferrer">
-                    <img className="bp-images" src="public/images/aalto_logo_500.png" />
+                    <img className="bp-images" src="/images/aalto_logo_500.png" />
                   </a>
                 </div>
                 <div className="flex-column">
                   <a className="margin-1" href={bptLink} target="_blank" rel="noopener noreferrer">
-                    <img className="bp-images" src="public/images/bpt_logo.png" />
+                    <img className="bp-images" src="/images/bpt_logo.png" />
                   </a>
                 </div>
               </div>
