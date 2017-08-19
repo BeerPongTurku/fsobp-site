@@ -17,11 +17,15 @@ const setCookie = (cname, cvalue, expirationDays) => {
 
 const getCookie = cname => {
   const decodedCookie = decodeURIComponent(document.cookie);
+
   const browserCookies = decodedCookie.split(';');
   const cookieValue = browserCookies.find(cookie => {
     const _cnameAndValue = cookie.split('=');
     return cname === _cnameAndValue[0].trim();
   });
+  if (!cookieValue) {
+    return null;
+  }
   return cookieValue.split('=')[1];
 }
 
@@ -51,7 +55,7 @@ export default function siteContentReducer(state = initialState, action) {
     case types.CHANGE_LANGUAGE:
 
       setCookie('lang', action.languageCode);
-            //  Check that the language is available
+      //  Check that the language is available
       const selectedLanguage = state.languages.filter(language => language === action.languageCode);
       if (selectedLanguage) {
         return {
