@@ -6,10 +6,28 @@
     "In this special tournament the price of an early bird ticket is only 20 euros per team. The price includes a place in the tournament and entrance to the afterparty for both players. Cheap game drinks must be purchased at the spot. Places are limited, and the price  will rise to 25 euros beginning from 1.9. (if tickets are still left). So better be quick!",
     "The tournament is arranged in co-operation by Aalto Beer Pong and Beer Pong Turku. It will be played with the rules of ESOBP, which differ a bit from the usual rules of Aalto Beer Pong and Beer Pong Turku. Please see the rules in advance <a href=http://www.esobp.com/en/beer-pong-rules.html>here.</a>"
   ],
-  "organizers": "Organizers",
+  "organizersTitle": "Organizers",
+  "organizers": [
+    {
+      "id": 1,
+      "name": "ABP",
+      "link": "https://abp.ayy.fi/",
+      "logo": "aalto_logo_500.png"
+    },
+    {
+      "id": 2,
+      "name": "BPT",
+      "link": "https://abp.ayy.fi/",
+      "logo": "bpt_logo.png"
+    },
+    {
+      "id": 3,
+      "name": "MM-Pingis",
+      "link": "http://mn-pingis.fi/",
+      "logo": "mm-pingis_logo.jpg"
+    }
+  ],
   "contacts": "Contacts",
-  "abpLink": "https://abp.ayy.fi/",
-  "bptLink": "https://www.facebook.com/BeerPongTurku/",
   "contactInformation": "info@fsobp.com",
   "endDate": "April 14, 2017, 18:00 GMT+3",
   "navItems": [
@@ -24,6 +42,6 @@
   ],
   "teamsPage": {
     "header": "Teams",
-    "bodyText": "Oh gosh how many teams! Register your own team here <a href=https://bailataan.fi/#!/events/d053c0f1-a709-47b8-8527-a619a3c70b0e>Bailataan.fi</a>. Come and win the biggest Beer Pong tournament in Finland!"
+    "bodyText": "Oh dear how many teams! Register your own here at <a href=https://bailataan.fi/#!/events/d053c0f1-a709-47b8-8527-a619a3c70b0e>Bailataan.fi</a>. Come and win the biggest Beer Pong tournament in Finland!"
   }
 }

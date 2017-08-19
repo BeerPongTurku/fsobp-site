@@ -14,7 +14,7 @@ const Teams = ({ content, teams }) => {
       <div className="row center-xs" >
         <div className="col-sm-8 col-md-6">
           <h1 className="margin-2">{teamsPage.header}</h1>
-          <DangerousContent content={teamsPage.bodyText} />
+          <h4><DangerousContent content={teamsPage.bodyText} /></h4>
           <ul id="teams-list">
             {teams.map(team =>
               <li

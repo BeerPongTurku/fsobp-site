@@ -6,7 +6,7 @@ import DangerousContent from '../components/DangerousContent';
 
 
 const Home = ({ content }) => {
-  const { bodyText, organizers, abpLink, bptLink } = content;
+  const { bodyText, organizers, organizersTitle } = content;
 
   return (
     <div className="page-wrapper text-center line-height-high" >
@@ -25,19 +25,24 @@ const Home = ({ content }) => {
           ))}
           <div className="row center-xs margin-top-2">
             <div className="text-center">
-              <h3 className="title">{organizers}</h3>
-              <div className="row">
-                {/*Aalto Beer Pong*/}
-                <div className="col-xs-12 col-sm-6">
-                  <a className=" margin-1" href={abpLink} target="_blank" rel="noopener noreferrer">
-                    <img className="bp-images" src="/images/aalto_logo_500.png" />
-                  </a>
-                </div>
-                <div className="col-xs-12 col-sm-6">
-                  <a className="margin-1" href={bptLink} target="_blank" rel="noopener noreferrer">
-                    <img className="bp-images" src="/images/bpt_logo.png" />
-                  </a>
-                </div>
+              <h3 className="title">{organizersTitle}</h3>
+              <div className="row center middle-xs">
+                {organizers.map((organizer, index) => {
+                  let divMediumWidth;
+                  if (index === organizers.length - 1 && organizers.length % 2 !== 0) {
+                    divMediumWidth = 'col-sm-4';
+                  } else {
+                    divMediumWidth = 'col-sm-4';
+                  }
+                  return (
+                    <div className={`col-xs-12 ${divMediumWidth}`}>
+                      <a href={organizer.link} target="_blank" rel="noopener noreferrer">
+                        <img alt={organizer.name} className="bp-images margin-1" src={`/images/${organizer.logo}`} />
+                      </a>
+                    </div>
+                  )
+                })
+                }
               </div>
             </div>
           </div>
@@ -46,8 +51,6 @@ const Home = ({ content }) => {
     </div >
   )
 }
-
-
 
 const mapStateToProps = state => ({
   content: state.content.siteContent

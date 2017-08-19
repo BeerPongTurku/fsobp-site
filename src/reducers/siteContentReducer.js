@@ -16,6 +16,7 @@ const initialState = {
 export default function siteContentReducer(state = initialState, action) {
   switch (action.type) {
     case types.CHANGE_LANGUAGE:
+      console.log(getCookie('_ga'));
       //  Check that the language is available
       const selectedLanguage = state.languages.filter(language => language === action.languageCode);
       if (selectedLanguage) {
@@ -34,3 +35,15 @@ export default function siteContentReducer(state = initialState, action) {
       return state;
   }
 }
+
+
+const getCookie = cname => {
+  const name = cname + '=';
+  const decodedCookie = decodeURIComponent(document.cookie);
+  const browserCookies = decodedCookie.split(';');
+  return browserCookies.find(cookie => {
+    const _cnameAndValue = cookie.split('=');
+    return cname === _cnameAndValue[0];
+  });
+}
+
