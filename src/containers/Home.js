@@ -35,7 +35,10 @@ const Home = ({ content }) => {
                     divMediumWidth = 'col-sm-4';
                   }
                   return (
-                    <div className={`col-xs-12 ${divMediumWidth}`}>
+                    <div
+                      key={organizer.id}
+                      className={`col-xs-12 ${divMediumWidth}`}
+                    >
                       <a href={organizer.link} target="_blank" rel="noopener noreferrer">
                         <img alt={organizer.name} className="bp-images margin-1" src={`/images/${organizer.logo}`} />
                       </a>

@@ -14,7 +14,8 @@
     "open:src": "babel-node tools/server.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "prod": "npm run clean && cross-env NODE_ENV=production webpack -p",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
+    "prod": "cross-env NODE_ENV=production node prodServer.js",    
     "clean": "rm -rf ./dist/*"
   },
   "dependencies": {

@@ -1,9 +1,12 @@
 .team-page {
     text-align: start;
+    h4 {
+        line-height: 150%;
+    }
     ul#teams-list {
         margin: 2rem 0;
         li {
-            background: #fafafa;
+            background: transparent;
             color: #333;
             font-weight: 600;
             padding: 1rem 2rem;

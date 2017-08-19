@@ -12,7 +12,7 @@ const Header = ({ content, languageCode, languages, changeLanguage }) => {
         <div className="col-xs-6 col-sm-3" >
           <ul className="list-inline">
             {navItems.map(item => (
-              <li key={item.text}><Link to={item.location} className="hvr-underline-reveal active">{item.text}</Link></li>
+              <li key={item.text}><Link to={item.location} className="hvr-underline-reveal">{item.text}</Link></li>
             ))}
           </ul>
         </div>
