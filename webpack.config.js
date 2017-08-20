@@ -7,7 +7,8 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const webpack = require('webpack');
 const path = require('path');
 
-const isProd = false; // process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === 'production';
+const port = process.env.PORT || 3000;
 // Development css works with hot module replacement which is not compatible with ExtractTextPlugin()
 const cssDev = [
   'style-loader',
@@ -61,7 +62,7 @@ module.exports = {
     publicPath: '/',
     contentBase: path.join(__dirname, 'src', 'public'),
     compress: false, // use in prod
-    port: 3000,
+    port,
     stats: 'errors-only',
     open: true,
     openPage: '',
@@ -81,8 +82,7 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new ExtractTextPlugin({
       filename: "styles.css",
-      disable: !isProd,
-      allChunks: true
+      disable: !isProd
     }),
     new FaviconsWebpackPlugin(path.join(__dirname, 'src', 'public', 'favicon.png'))
   ],
