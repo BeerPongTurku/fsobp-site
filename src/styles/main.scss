@@ -69,11 +69,13 @@
 
 .navbar-fsobp div.nav-container ul {
     display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .navbar-fsobp div.nav-container ul li {
     text-align: center;
     padding: 0;
+    margin: 0 auto;
 }
 
 .navbar-fsobp div.nav-container ul li a {

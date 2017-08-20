@@ -37,7 +37,7 @@
     },
     {
       "text": "Teams",
-      "location": "/teams"
+      "location": "teams"
     }
   ],
   "teamsPage": {
