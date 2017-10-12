@@ -5,3 +5,10 @@ export const loadTeams = () => dispatch => {
     type: types.REQUEST_TEAMS_LIST
   })
 }
+
+export const filterTeams = searchTerm => dispatch => {
+  dispatch({
+    type: types.FILTER_TEAMS,
+    searchTerm
+  })
+}

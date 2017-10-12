@@ -42,6 +42,10 @@
   ],
   "teamsPage": {
     "header": "Joukkueet",
-    "bodyText": "Turnaukseen osallistujia on jo hurja määrä! Käy rekisteröimässä oma joukkueesi täällä <a href=https://bailataan.fi/#!/events/d053c0f1-a709-47b8-8527-a619a3c70b0e>Bailataan.fi</a> ja tule mukaan Suomen suurimpaan Beer Pong -turnaukseen"
+    "bodyText": "Alta löydät joukkueesi pelit ja peliajat.",
+    "inputPlaceholder": "Nimi"
+  },
+  "common": {
+    "search": "Hae"
   }
 }

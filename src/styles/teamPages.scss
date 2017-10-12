@@ -10,10 +10,15 @@
             color: #333;
             font-weight: 600;
             padding: 1rem 2rem;
-            &:nth-child(odd) {
+            h1 {
+                color: white;
+                padding: 20px;
                 background: #0b1e38;
-                color: #f9f9f9;
+                margin-bottom: 1rem;
             }
         }
+    }
+    .time {
+        color: #18447e;
     }
 }
