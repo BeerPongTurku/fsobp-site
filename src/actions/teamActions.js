@@ -6,8 +6,8 @@ const isProd = process.env.NODE_ENV !== 'production';
 
 export const loadTeams = () => dispatch => {
   if (isProd) {
-    // Axios.get('https://fsobp.com/tournament')
-    Axios.get('http://localhost:3001/tournament')
+    Axios.get('https://fsobp.com/tournament')
+      // Axios.get('http://localhost:3001/tournament')
       .then(result => {
         dispatch({
           type: types.REQUEST_TEAMS_LIST,

@@ -9,7 +9,9 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'src', 'public')));
 // Locate tournament jsons
 
-app.use(cors())
+if (process.env.NODE_ENV !== 'production') {
+  app.use(cors())
+}
 
 app.get('/tournament', (req, res) => {
   const tournament = require(path.join(__dirname, 'tournament/data/gamesPerTeam.json'));
