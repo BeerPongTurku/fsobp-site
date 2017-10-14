@@ -76,6 +76,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "6.8.0",
     "colors": "1.1.2",
+    "cors": "^2.8.4",
     "cross-env": "^1.0.7",
     "css-loader": "^0.26.1",
     "enzyme": "^2.8.2",

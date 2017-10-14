@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors')
 
 const app = express();
 
@@ -8,9 +9,14 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'src', 'public')));
 // Locate tournament jsons
 
+app.use(cors())
+
 app.get('/tournament', (req, res) => {
-  res.send(200);
+  const tournament = require(path.join(__dirname, 'tournament/data/gamesPerTeam.json'));
+  res.send(tournament);
 });
+
+
 
 
 app.get('*', (req, res) => {
