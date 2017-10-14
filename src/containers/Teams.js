@@ -36,26 +36,31 @@ const Teams = ({ content, tournament, inputValue, filterTeams }) => {
                   <div className="col-xs-2">
                     <p className="margin-clear">Game (time)</p>
                   </div>
+                  <div className="col-xs-2 col-xs-offset-8 end-xs">
+                    <p className="margin-clear">Table</p>
+                  </div>
                 </div>
 
                 {teamGames.map(game =>
                   <div
                     key={teamGames[0].team + game.gameNumber}
-                    className="row between-xs center-xs margin-top-1"
+                    className="row margin-top-1"
                   >
-                    <div className="col-xs-2 margin-top-1 start-xs">
+                    <div className="col-xs-2 col-sm-2 margin-top-1 start-xs">
                       <p className="time">{`${game.gameNumber} (${game.time})`}</p>
                     </div>
-                    <div className="col-xs-3 start-xs">
+                    <div className="col-xs-4 col-sm-3 start-xs">
                       <p>{game.team1}</p>
                     </div>
-                    <div className="col-xs-1 col-sm-2">
-                      <p style={{ fontWeight: 'bold', color: '#e50015' }}>vs</p>
+                    <div className="col-xs-1 col-sm-2 col-sm-2">
+                      <p className="time" style={{ fontWeight: 'bold' }}>vs</p>
                     </div>
-                    <div className="col-xs-3 end-xs">
+                    <div className="col-xs-4 col-sm-3 end-xs">
                       <p>{game.team2}</p>
                     </div>
-                    <div className="col-xs-0 col-sm-2" />
+                    <div className="col-xs-1 col-sm-2 margin-top-1 end-xs">
+                      <p className="time">{calculateTable(game.gameNumber)}</p>
+                    </div>
                   </div>
                 )}
               </li>
@@ -67,6 +72,13 @@ const Teams = ({ content, tournament, inputValue, filterTeams }) => {
   )
 }
 
+const calculateTable = num => {
+  const modulo = num % 16;
+  if (modulo === 0) {
+    return 16;
+  }
+  return modulo;
+}
 const mapStateToProps = state => ({
   content: state.content.siteContent,
   tournament: state.team.tournament,
