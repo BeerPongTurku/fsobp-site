@@ -2,7 +2,7 @@ import * as types from './actionTypes';
 import Axios from 'axios';
 import tournamentDummy from '../../tournament/data/gamesPerTeam.json';
 
-const isProd = process.env.NODE_ENV !== 'production';
+const isProd = process.env.NODE_ENV === 'production';
 
 export const loadTeams = () => dispatch => {
   if (isProd) {
