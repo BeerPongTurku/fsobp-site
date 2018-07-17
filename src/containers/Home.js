@@ -13,7 +13,7 @@ const Home = ({ content }) => {
       <div className="row center-xs" >
         <div className="col-xs-12 col-sm-8 col-md-5 padding-1">
           <Link to="/"><img className="img img-responsive margin-top-2 margin-bottom-2" alt="FSOBP" src="/images/fsobp_logo_border_500.png" /></Link>
-          <h1 className="text-center margin-1">Finnish Series of Beer Pong 2017</h1>
+          <h1 className="text-center margin-1">Finnish Series of Beer Pong 2018</h1>
           {bodyText.map((paragraph, index) => (
             <div
               key={index}

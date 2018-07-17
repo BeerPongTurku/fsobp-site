@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const Footer = ({ content }) => (
   <footer className="sticky-footer">
     <div className="flex-column text-center padding-2">
-      <p>FSOBP | 2017</p>
+      <p>FSOBP | 2018</p>
       <p><b>{content.contacts}:</b></p>
       <p><a className="mail-link" href={'mailto:' + content.contactInformation}>{content.contactInformation}</a></p>
     </div>

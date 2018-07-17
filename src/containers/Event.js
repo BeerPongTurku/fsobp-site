@@ -5,14 +5,14 @@ import { changeLanguage } from '../actions/contentActions';
 
 
 const Home = ({ content }) => {
-  const { bodyText, organizers, abpLink, bptLink} = content;
+  const { bodyText, organizers, abpLink, bptLink } = content;
 
   return (
     <div className="page-wrapper text-center line-height-high" >
       <div className="row center-xs" >
         <div className="col-sm-8 col-md-6">
           <Link to="/"><img className="img img-responsive margin-auto margin-2" alt="FSOBP" src="/images/fsobp_logo_border_500.png" /></Link>
-          <h1 className="text-center margin-1">Finnish Series of Beer Pong 2017</h1>
+          <h1 className="text-center margin-1">Finnish Series of Beer Pong 2018</h1>
           {bodyText.map((paragraph, index) => (
             <div
               key={index}
@@ -45,7 +45,6 @@ const Home = ({ content }) => {
     </div >
   )
 }
-
 
 
 const mapStateToProps = state => ({
