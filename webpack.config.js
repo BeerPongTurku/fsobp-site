@@ -71,7 +71,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'FSOBP 2017',
+      title: 'FSOBP 2018',
       minify: {
         collapseWhitespace: false // use in prod
       },
