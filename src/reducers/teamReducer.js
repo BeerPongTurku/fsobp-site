@@ -1,7 +1,7 @@
-import _ from 'lodash';
 import * as types from '../actions/actionTypes';
 
 const initialState = {
+  originalTournament: [],
   tournament: [],
   inputValue: ''
 }
@@ -10,7 +10,7 @@ export default function teamReducer(state = initialState, action) {
   switch (action.type) {
     case types.FILTER_TEAMS:
       const searchTerm = action.searchTerm.toLowerCase();
-      const filteredResult = state.tournament.filter(games => {
+      const filteredResult = state.originalTournament.filter(games => {
         const teamName = games[0].team.toLowerCase();
         return teamName.includes(searchTerm);
       });
@@ -20,11 +20,11 @@ export default function teamReducer(state = initialState, action) {
         inputValue: action.searchTerm
       }
     case types.REQUEST_TEAMS_LIST:
-      const tournament = action.tournament;
-      if (tournament) {
+      if (action.tournament) {
         return {
           ...state,
-          tournament
+          originalTournament: action.tournament,
+          tournament: action.tournament
         }
       }
       return { ...state }

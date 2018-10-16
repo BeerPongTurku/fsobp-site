@@ -10,9 +10,8 @@
   },
   "scripts": {
     "test": "mocha --watch --compilers js:babel-core/register ./test/**/*.spec.js",
-    "start": "npm-run-all --parallel open:src lint:watch",
+    "start": "npm-run-all --parallel open:src",
     "open:src": "babel-node tools/server.js",
-    "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "prod": "cross-env NODE_ENV=production node prodServer.js",

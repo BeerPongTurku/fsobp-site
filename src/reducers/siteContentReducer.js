@@ -53,7 +53,6 @@ const initialState = {
 export default function siteContentReducer(state = initialState, action) {
   switch (action.type) {
     case types.CHANGE_LANGUAGE:
-
       setCookie('lang', action.languageCode);
       //  Check that the language is available
       const selectedLanguage = state.languages.filter(language => language === action.languageCode);
@@ -73,6 +72,4 @@ export default function siteContentReducer(state = initialState, action) {
       return state;
   }
 }
-
-
 

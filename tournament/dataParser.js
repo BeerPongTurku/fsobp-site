@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 // SKIPS THE FIRTS LINE
 const fileToArrayLineByLine = (fileNameish, encoding, lineEnding) => {
@@ -13,10 +13,9 @@ const fileToArrayLineByLine = (fileNameish, encoding, lineEnding) => {
   try {
     const data = fs.readFileSync(filePath, encoding);
     array = data.toString().split(lineEnding).slice(1);
-
   } catch (error) {
     console.log('File error:', error)
-  };
+  }
   return array;
 }
 
@@ -31,14 +30,13 @@ const teams = fileToArrayLineByLine('teams', 'utf-8', '\n').map(line => csvLineT
 
 
 console.log('Teams:', teams.length);
-console.log('Games:', tournament.length, );
+console.log('Games:', tournament.length);
 
 const generateGamesPerTeams = () => new Promise((resolve, reject) => {
   const gamesOfTeams = [];
 
   teams.forEach(team => {
     if (team.length > 0) {
-
       const teamGames = tournament
         .filter(gamesArray => {
           if (gamesArray.indexOf(team) === 0) {
@@ -53,9 +51,8 @@ const generateGamesPerTeams = () => new Promise((resolve, reject) => {
               console.log('IS NULL', team, team === undefined);
             }
             return { team: team, ...teamLineArrayToObject(games) };
-          } else {
-            console.log('NO LINE', team);
           }
+          console.log('NO LINE', team);
         });
       gamesOfTeams.push(teamGames);
       if (teamGames.length === 0) {
@@ -73,9 +70,6 @@ const generateGamesPerTeams = () => new Promise((resolve, reject) => {
 });
 
 const gameTimes = [
-  '13.00',
-  '13.20',
-  '13.40',
   '14.00',
   '14.20',
   '14.40',
@@ -85,7 +79,10 @@ const gameTimes = [
   '16.00',
   '16.20',
   '16.40',
-  '17.00'
+  '17.00',
+  '17.20',
+  '17.40',
+  '18.00'
 ]
 
 const calculateGameTimes = gameNum => gameTimes[parseInt(gameNum / 16 - 0.0625)];
@@ -101,16 +98,12 @@ const teamLineArrayToObject = array => {
 }
 
 const generateTournamentJson = () => {
-
   generateGamesPerTeams().then(result => {
     const resultPath = path.join(__dirname, 'data', 'gamesPerTeam.json');
     fs.writeFileSync(resultPath, JSON.stringify(result));
     console.log('TOURNAMENT JSON CREATED');
   })
     .catch(reason => console.log(reason));
-
 }
 generateTournamentJson();
-
-
 
