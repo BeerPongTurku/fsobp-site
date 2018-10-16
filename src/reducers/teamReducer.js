@@ -1,3 +1,4 @@
+import sortBy from 'lodash/sortBy'
 import * as types from '../actions/actionTypes';
 
 const initialState = {
@@ -23,7 +24,7 @@ export default function teamReducer(state = initialState, action) {
       if (action.tournament) {
         return {
           ...state,
-          originalTournament: action.tournament,
+          originalTournament: sortBy(action.tournament, [team => team.team]),
           tournament: action.tournament
         }
       }
