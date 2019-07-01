@@ -1,0 +1,37 @@
+.team-page {
+    text-align: start;
+    h4 {
+        line-height: 150%;
+    }
+    ul#teams-list {
+        margin: 2rem 0;
+        li {
+            background: transparent;
+            color: #333;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            h1 {
+                color: white;
+                padding: 20px;
+                background: #0b1e38;
+                margin-bottom: 1rem;
+            }
+            .row {
+                &:nth-child(odd) {
+                    background-color: aliceblue;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 375px) {
+        ul#teams-list {
+            margin: 0;
+            li {
+                padding: 1rem 0.5rem;
+            }
+        }
+    }
+    .time {
+        color: #18447e;
+    }
+}

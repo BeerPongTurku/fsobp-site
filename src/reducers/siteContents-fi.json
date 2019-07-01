@@ -1,0 +1,51 @@
+{
+  "displayFrontpage": true,
+  "bodyText": [
+    "Finnish Series of Beer Pong saapuu jälleen! Voita unohtumaton matka Itävaltaan pelaamaan beer pongia! Turnauksen pääpalkintona on matka seuraavaan European Series of Beer Pongiin, joka järjestetään Itävallan Innsbruckissa 3.-5.1.2019. Palkinto kattaa tänäkin vuonna osallistumismaksun sekä lentomatkat ja majoituksen kahdelle hengelle turnauksen ajaksi (yhteensä 500 euroon saakka).",
+    "Turnaus järjestetään lauantaina 20. lokakuuta Helsingin Club Capitalissa. Turnauksen lipunmyynti alkaa elokuun ensimmäisellä viikolla. Liput lunastettavissa 1.8. klo 12.00 osoitteessa <a href='https://bailataan.fi/events/d72f053c-3fd8-43db-87dc-81fffaab9e29' target='_blank'>Bailataan.fi</a>",
+    "Tämän yhden Suomen näyttävimmistä Beer Pong -turnauksista early bird -lipun hinta on vain 20 € per tiimi. Lipun hinta sisältää osallistumisen turnaukseen ja sisäänpääsyn jatkobileisiin molemmille pelaajille. Pelijuomat hankitaan omakustanteisesti hyvinkin edullisesti paikan päällä. Paikkoja on 96 tiimille ja lipun hinta nousee 25 euroon 3.9. alkaen, joten toimi nopeasti!",
+    "Turnauksen järjestävät yhteistyössä Aalto Beer Pong ja Beer Pong Turku. Turnaus pelataan ESOBP-turnauksen säännöillä, jotka poikkeavat hieman säännöistä, joihin on Aalto Beer Pongin ja Beer Pong Turun turnauksissa totuttu. Tutustuthan sääntöihin etukäteen <a href='https://bpong.com/wsobp/official-rules-of-the-world-series-of-beer-pong' target='_blank'/>täällä</a>."
+  ],
+  "organizersTitle": "Peleissä mukana",
+  "organizers": [
+    {
+      "id": 1,
+      "name": "ABP",
+      "link": "https://abp.ayy.fi/",
+      "logo": "aalto_logo_500.png"
+    },
+    {
+      "id": 2,
+      "name": "BPT",
+      "link": "https://beerpongturku.wordpress.com/",
+      "logo": "bpt_logo.png"
+    },
+    {
+      "id": 3,
+      "name": "MM-Pingis",
+      "link": "http://mn-pingis.fi/",
+      "logo": "mm-pingis_logo.jpg"
+    }
+  ],
+  "contacts": "Yhteydenotot",
+  "contactInformation": "info@fsobp.com",
+  "endDate": "April 14, 2018, 18:00 GMT+3",
+  "navItems": [
+    {
+      "text": "Etusivu",
+      "location": "/"
+    },
+    {
+      "text": "Turnausaikataulu",
+      "location": "/teams"
+    }
+  ],
+  "teamsPage": {
+    "header": "Joukkueet",
+    "bodyText": "Alta löydät joukkueesi pelit ja peliajat.",
+    "inputPlaceholder": "Nimi"
+  },
+  "common": {
+    "search": "Hae"
+  }
+}
