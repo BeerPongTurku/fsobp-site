@@ -16,7 +16,7 @@ import Routes from './routes';
 const history = createBrowserHistory()
 const store = configureStore(history, initialState);
 
-// store.dispatch(loadContent());
+store.dispatch(loadContent());
 // store.dispatch(loadTeams());
 
 render(

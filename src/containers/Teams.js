@@ -7,23 +7,26 @@ import '../styles/teamPages.scss'
 
 const Teams = ({ content, tournament, inputValue, filterTeams }) => {
   const { teamsPage, common } = content;
+  const bodyText = teamsPage.showSchedule ? teamsPage.bodyText : teamsPage.bodyTextHiddenSchedule
   return (
     <div className="team-page page-wrapper line-height-high" >
       <div className="row center-xs" >
         <div className="col-xs-12 col-sm-10 col-md-9">
           <h1 className="margin-2">{teamsPage.header}</h1>
-          <h4><DangerousContent content={teamsPage.bodyText} /></h4>
-          <div>
-            <p style={{ display: 'inline-block', fontWeight: 'bold' }}>{common.search}</p>
-            <input
-              className="search-input margin-1"
-              type="text"
-              value={inputValue}
-              placeholder={teamsPage.inputPlaceholder}
-              onChange={event => filterTeams(event.target.value)}
-              style={{ display: 'inline-block' }}
-            />
-          </div>
+          <h4><DangerousContent content={bodyText} /></h4>
+          {teamsPage.showSchedule &&
+            <div>
+              <p style={{ display: 'inline-block', fontWeight: 'bold' }}>{common.search}</p>
+              <input
+                className="search-input margin-1"
+                type="text"
+                value={inputValue}
+                placeholder={teamsPage.inputPlaceholder}
+                onChange={event => filterTeams(event.target.value)}
+                style={{ display: 'inline-block' }}
+              />
+            </div>
+          }
           <ul id="teams-list">
             {tournament.map(teamGames =>
               <li
@@ -72,7 +75,7 @@ const Teams = ({ content, tournament, inputValue, filterTeams }) => {
 
 const calculateTable = num => {
   const modulo = num % 16;
-  if (modulo === 0) {
+  if(modulo === 0) {
     return 16;
   }
   return modulo;

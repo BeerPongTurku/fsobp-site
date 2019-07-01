@@ -11,20 +11,17 @@
     {
       "id": 1,
       "name": "ABP",
-      "link": "https://abp.ayy.fi/",
-      "logo": "aalto_logo_500.png"
+      "link": "https://abp.ayy.fi/"
     },
     {
       "id": 2,
       "name": "BPT",
-      "link": "https://beerpongturku.wordpress.com/",
-      "logo": "bpt_logo.png"
+      "link": "https://beerpongturku.wordpress.com/"
     },
     {
       "id": 3,
       "name": "MM-Pingis",
-      "link": "http://mn-pingis.fi/",
-      "logo": "mm-pingis_logo.jpg"
+      "link": "http://mn-pingis.fi/"
     }
   ],
   "contacts": "Contacts",
@@ -43,7 +40,9 @@
   "teamsPage": {
     "header": "Teams",
     "bodyText": "Your games and opponents are listed below",
-    "inputPlaceholder": "Name"
+    "bodyTextHiddenSchedule": "You will find your games from this page eventually.",
+    "inputPlaceholder": "Name",
+    "showSchedule": false
   },
   "common": {
     "search": "Search"

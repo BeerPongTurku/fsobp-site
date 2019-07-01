@@ -11,20 +11,17 @@
     {
       "id": 1,
       "name": "ABP",
-      "link": "https://abp.ayy.fi/",
-      "logo": "aalto_logo_500.png"
+      "link": "https://abp.ayy.fi/"
     },
     {
       "id": 2,
       "name": "BPT",
-      "link": "https://beerpongturku.wordpress.com/",
-      "logo": "bpt_logo.png"
+      "link": "https://beerpongturku.wordpress.com/"
     },
     {
       "id": 3,
       "name": "MM-Pingis",
-      "link": "http://mn-pingis.fi/",
-      "logo": "mm-pingis_logo.jpg"
+      "link": "http://mn-pingis.fi/"
     }
   ],
   "contacts": "Yhteydenotot",
@@ -41,9 +38,11 @@
     }
   ],
   "teamsPage": {
-    "header": "Joukkueet",
+    "header": "Joukkueet ja aikataulut",
     "bodyText": "Alta löydät joukkueesi pelit ja peliajat.",
-    "inputPlaceholder": "Nimi"
+    "bodyTextHiddenSchedule": "Tältä sivulta tulet näkemään oman joukkueesi pelit.",
+    "inputPlaceholder": "Nimi",
+    "showSchedule": false
   },
   "common": {
     "search": "Hae"

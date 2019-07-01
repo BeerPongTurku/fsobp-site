@@ -51,7 +51,7 @@ const mapStateToProps = state => ({
   languageCode: state.content.languageCode,
   languages: state.content.languages,
   content: state.content.siteContent,
-  pathname: state.routing.locationBeforeTransitions.pathname
+  pathname: state.router.location.pathname
 });
 
 export default connect(mapStateToProps, { changeLanguage })(Header);
