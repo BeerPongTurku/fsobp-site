@@ -9,8 +9,10 @@ const configureStore = (history, initialState) => {
   const middlewares = [thunk, routerMiddleware(history)]
   const store = createStore(
     combineReducers(
-      rootReducer,
-      { router: connectRouter(history) }
+      {
+        ...rootReducer,
+         router: connectRouter(history)
+         }
     ),
     applyMiddleware(...middlewares)
   )
