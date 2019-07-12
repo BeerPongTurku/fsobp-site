@@ -1,13 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-const DangerousContent = ({ content }) => {
-  const createMarkup = text => {
-    return { __html: text }
-  }
+const dangerousHtml = text => ({ __html: text })
 
-  return (
-    <div dangerouslySetInnerHTML={createMarkup(content)} />
-  )
+const DangerousContent = ({ content }) =>
+  <div dangerouslySetInnerHTML={dangerousHtml(content)} />
+
+DangerousContent.propTypes = {
+  content: PropTypes.string.isRequired
 }
 
 export default DangerousContent;

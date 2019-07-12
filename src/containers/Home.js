@@ -16,6 +16,16 @@ const organizerLogos = {
   'MM-Pingis': mmPingisLogo
 }
 
+const contentText = (paragraph, index, array) => (
+  <div
+    key={index}
+    className="text-left markup-container"
+  >
+    <DangerousContent content={paragraph} />
+    {index === array.length - 1 ? '' : <hr />}
+  </div>
+)
+
 const Home = ({ content }) => {
   const { bodyText, organizers, organizersTitle } = content;
   return (
@@ -24,15 +34,7 @@ const Home = ({ content }) => {
         <div className="col-xs-12 col-sm-8 col-md-5 padding-1">
           <Link to="/"><img className="img img-responsive margin-top-2 margin-bottom-2" alt="FSOBP" src={fsobpLogoBorder} /></Link>
           <h1 className="text-center margin-1">Finnish Series of Beer Pong {getYear()}</h1>
-          {bodyText.map((paragraph, index) => (
-            <div
-              key={index}
-              className="text-left markup-container"
-            >
-              <DangerousContent content={paragraph} />
-              {index === bodyText.length - 1 ? '' : <hr />}
-            </div>
-          ))}
+          {bodyText.map(contentText)}
           <div className="row center-xs margin-top-2">
             <div className="text-center">
               <h3 className="title">{organizersTitle}</h3>
