@@ -16,10 +16,18 @@
     {
       "id": 2,
       "name": "BPT",
-      "link": "https://beerpongturku.wordpress.com/"
+      "link": "https://www.facebook.com/BeerPongTurku/"
     },
     {
       "id": 3,
+      "name": "LBP",
+      "link": "https://www.facebook.com/LappeenrantaBP/"
+    }
+  ],
+  "partnersTitle": "Partners",
+  "partners": [
+    {
+      "id": 1,
       "name": "MM-Pingis",
       "link": "http://mn-pingis.fi/"
     }
