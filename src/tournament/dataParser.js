@@ -1,5 +1,18 @@
 const fs = require('fs');
 const path = require('path');
+const moment = require('moment')
+
+const tournamentDate = '20191026'
+const tournamentStartTime = '1300'
+const gameCount = 13
+const gameDurationMinutes = 20
+const gameDay = moment(`${tournamentDate}T${tournamentStartTime}`)
+const getGameTime = gameNumber => 
+  moment(gameDay).add(gameDurationMinutes * gameNumber, 'minutes').format('HH:mm')
+
+const gameTimes = Array(gameCount).fill().map((_, index) => 
+  getGameTime(index)
+)
 
 // SKIPS THE FIRTS LINE
 const fileToArrayLineByLine = (fileNameish, encoding, lineEnding) => {
@@ -28,7 +41,6 @@ const csvLineToArray = line => {
 const tournament = fileToArrayLineByLine('tournament', 'utf-8', '\n').map(line => csvLineToArray(line));
 const teams = fileToArrayLineByLine('teams', 'utf-8', '\n').map(line => csvLineToArray(line)[0]).filter(teamName => teamName !== undefined);
 
-
 console.log('Teams:', teams.length);
 console.log('Games:', tournament.length);
 
@@ -44,7 +56,6 @@ const generateGamesPerTeams = () => new Promise((resolve, reject) => {
           }
           return gamesArray.indexOf(team) > 0
         })
-
         .map(games => {
           if (games) {
             if (team === undefined) {
@@ -52,6 +63,7 @@ const generateGamesPerTeams = () => new Promise((resolve, reject) => {
             }
             return { team: team, ...teamLineArrayToObject(games) };
           }
+          return
           console.log('NO LINE', team);
         });
       gamesOfTeams.push(teamGames);
@@ -69,21 +81,6 @@ const generateGamesPerTeams = () => new Promise((resolve, reject) => {
   });
 });
 
-const gameTimes = [
-  '14.00',
-  '14.20',
-  '14.40',
-  '15.00',
-  '15.20',
-  '15.40',
-  '16.00',
-  '16.20',
-  '16.40',
-  '17.00',
-  '17.20',
-  '17.40',
-  '18.00'
-]
 
 const calculateGameTimes = gameNum => gameTimes[parseInt(gameNum / 16 - 0.0625)];
 
