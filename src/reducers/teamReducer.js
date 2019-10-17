@@ -1,9 +1,10 @@
 import sortBy from 'lodash/sortBy'
 import * as types from '../actions/actionTypes';
+import tournament from '../tournament/data/gamesPerTeam'
 
 const initialState = {
-  originalTournament: [],
-  tournament: [],
+  originalTournament: sortBy(tournament, [team => team.team]),
+  tournament,
   inputValue: ''
 }
 
@@ -15,21 +16,22 @@ export default function teamReducer(state = initialState, action) {
         const teamName = games[0].team.toLowerCase();
         return teamName.includes(searchTerm);
       });
+      console.log(filteredResult)
       return {
         ...state,
         tournament: filteredResult,
         inputValue: action.searchTerm
       }
-    case types.REQUEST_TEAMS_LIST:
-      if (action.tournament) {
-        return {
-          ...state,
-          originalTournament: sortBy(action.tournament, [team => team.team]),
-          tournament: action.tournament
-        }
-      }
-      return { ...state }
-    case types.LOAD_CONTENT:
+    // case types.REQUEST_TEAMS_LIST:
+    //   if (action.tournament) {
+    //     return {
+    //       ...state,
+    //       originalTournament: sortBy(action.tournament, [team => team.team]),
+    //       tournament: action.tournament
+    //     }
+    //   }
+    //   return { ...state }
+    // case types.LOAD_CONTENT:
     default:
       return state;
   }
