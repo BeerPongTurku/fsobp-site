@@ -50,7 +50,8 @@
     "bodyText": "Your games and opponents are listed below",
     "bodyTextHiddenSchedule": "You will find your games from this page eventually.",
     "inputPlaceholder": "Name",
-    "showSchedule": false
+    "showSchedule": true,
+    "noSearchResults": "No results"
   },
   "common": {
     "search": "Search"

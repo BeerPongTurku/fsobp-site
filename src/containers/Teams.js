@@ -28,44 +28,47 @@ const Teams = ({ content, tournament, inputValue, filterTeams }) => {
             </div>
           }
           <ul id="teams-list">
-            {tournament.map(teamGames =>
-              <li
-                key={teamGames[0].team}
-              >
-                <h1>{teamGames[0].team}</h1>
-                <div className="row start-xs">
-                  <div className="col-xs-2">
-                    <p className="margin-clear">Game (time)</p>
+            {tournament.length
+              ? tournament.map(teamGames =>
+                <li
+                  key={teamGames[0].team}
+                >
+                  <h1>{teamGames[0].team}</h1>
+                  <div className="row start-xs">
+                    <div className="col-xs-6">
+                      <p className="margin-clear">Game (time)</p>
+                    </div>
+                    <div className="col-xs-6 end-xs">
+                      <p className="margin-clear">Table</p>
+                    </div>
                   </div>
-                  <div className="col-xs-2 col-xs-offset-8 end-xs">
-                    <p className="margin-clear">Table</p>
-                  </div>
-                </div>
 
-                {teamGames.map(game =>
-                  <div
-                    key={teamGames[0].team + game.gameNumber}
-                    className="row margin-top-1"
-                  >
-                    <div className="col-xs-2 col-sm-2 margin-top-1 start-xs">
-                      <p className="time">{`${game.gameNumber} (${game.time})`}</p>
+                  {teamGames.map(game =>
+                    <div
+                      key={teamGames[0].team + game.gameNumber}
+                      className="row margin-top-1"
+                    >
+                      <div className="col-xs-2 col-sm-2 margin-top-1 start-xs">
+                        <p className="time">{`${game.gameNumber} (${game.time})`}</p>
+                      </div>
+                      <div className="col-xs-4 col-sm-3 start-xs">
+                        <p>{game.team1}</p>
+                      </div>
+                      <div className="col-xs-1 col-sm-2 col-sm-2">
+                        <p className="time" style={{ fontWeight: 'bold' }}>vs</p>
+                      </div>
+                      <div className="col-xs-4 col-sm-3 end-xs">
+                        <p>{game.team2}</p>
+                      </div>
+                      <div className="col-xs-1 col-sm-2 margin-top-1 end-xs">
+                        <p className="time">{calculateTable(game.gameNumber)}</p>
+                      </div>
                     </div>
-                    <div className="col-xs-4 col-sm-3 start-xs">
-                      <p>{game.team1}</p>
-                    </div>
-                    <div className="col-xs-1 col-sm-2 col-sm-2">
-                      <p className="time" style={{ fontWeight: 'bold' }}>vs</p>
-                    </div>
-                    <div className="col-xs-4 col-sm-3 end-xs">
-                      <p>{game.team2}</p>
-                    </div>
-                    <div className="col-xs-1 col-sm-2 margin-top-1 end-xs">
-                      <p className="time">{calculateTable(game.gameNumber)}</p>
-                    </div>
-                  </div>
-                )}
-              </li>
-            )}
+                  )}
+                </li>
+              )
+              : <p>{teamsPage.noSearchResults}</p>
+            }
           </ul>
         </div>
       </div >
