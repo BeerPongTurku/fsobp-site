@@ -24,14 +24,14 @@
       "link": "https://www.facebook.com/LappeenrantaBP/"
     }
   ],
-  /*"partnersTitle": "Yhteistyössä",
+  "partnersTitle": "Yhteistyössä",
   "partners": [
     {
       "id": 1,
       "name": "MM-Pingis",
       "link": "http://mn-pingis.fi/"
     }
-  ],*/
+  ],
   "contacts": "Yhteydenotot",
   "contactInformation": "info@fsobp.com",
   "endDate": "April 14, 2018, 18:00 GMT+3",
