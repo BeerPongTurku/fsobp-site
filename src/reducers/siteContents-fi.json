@@ -39,6 +39,21 @@
     {
       "text": "Etusivu",
       "location": "/"
+    },
+    {
+      "text": "Turnausaikataulu",
+      "location": "/teams"
     }
-  ]
+  ],
+  "teamsPage": {
+    "header": "Joukkueet ja aikataulut",
+    "bodyText": "Alta löydät joukkueesi pelit ja peliajat.",
+    "bodyTextHiddenSchedule": "Tältä sivulta tulet näkemään oman joukkueesi pelit.",
+    "inputPlaceholder": "Nimi",
+    "showSchedule": true,
+    "noSearchResults": "Ei tuloksia"
+  },
+  "common": {
+    "search": "Hae"
+  }
 }
