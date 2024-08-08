@@ -21,7 +21,7 @@ const logos = {
 const contentText = (paragraph, index, array) => (
   <div
     key={index}
-    className="text-left markup-container"
+    className="text-center markup-container"
   >
     <DangerousContent content={paragraph} />
     {index === array.length - 1 ? '' : <hr />}
