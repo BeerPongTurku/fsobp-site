@@ -38,6 +38,7 @@ const Home = ({ content }) => {
           <h1 className="text-center margin-1">Finnish Series of Beer Pong {getYear()}</h1>
           <div className="row center middle-xs">
             {bodyText.map(contentText)}
+          </div>
 
           <div className="row center-xs margin-top-2 margin-bottom-2">
             <div className="text-center margin-bottom-2">
