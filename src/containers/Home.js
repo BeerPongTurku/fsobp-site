@@ -36,9 +36,7 @@ const Home = ({ content }) => {
         <div className="col-xs-12 col-sm-8 col-md-5 padding-1">
           <Link to="/"><img className="img img-responsive margin-top-2 margin-bottom-2" alt="FSOBP" src={fsobpLogoBorder} /></Link>
           <h1 className="text-center margin-1">Finnish Series of Beer Pong {getYear()}</h1>
-          <div className="row center middle-xs">
-            {bodyText.map(contentText)}
-          </div>
+          {bodyText.map(contentText)}
 
           <div className="row center-xs margin-top-2 margin-bottom-2">
             <div className="text-center margin-bottom-2">
