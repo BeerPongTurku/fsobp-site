@@ -18,6 +18,11 @@
       "name": "BPT",
       "link": "https://www.beerpongturku.fi/"
     }
+    {
+      "id": 3,
+      "name": "LBP",
+      "link": "https://www.facebook.com/LappeenrantaBP/"
+    }
   ],
   "partnersTitle": "Yhteistyössä",
   "partners": [],
