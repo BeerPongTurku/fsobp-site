@@ -27,14 +27,14 @@ const contentText = (paragraph, index, array) => (
 )
 
 const Home = ({ content }) => {
-  const { bodyText, organizers, organizersTitle, } = content;
+  const { bodyText, organizers, organizersTitle, locationHeader } = content;
   return (
     <div className="page-wrapper text-center line-height-high" >
       <div className="row center-xs" >
         <div className="col-xs-12 col-sm-8 col-md-5 padding-1">
           <Link to="/"><img className="img img-responsive margin-top-2 margin-bottom-2" alt="FSOBP" src={fsobpLogoBorder} /></Link>
           <h1 className="text-center margin-1">Finnish Series of Beer Pong {getYear()}</h1>
-          <h2 className="text-center margin-1">23.11.2024 Turun T-talolla</h2>
+          <h2 className="text-center margin-1">{locationHeader}</h2>
           {bodyText.map(contentText)}
 
           <div className="row center-xs margin-top-2">
