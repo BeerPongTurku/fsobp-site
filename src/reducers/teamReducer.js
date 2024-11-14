@@ -22,16 +22,16 @@ export default function teamReducer(state = initialState, action) {
         tournament: filteredResult,
         inputValue: action.searchTerm
       }
-    // case types.REQUEST_TEAMS_LIST:
-    //   if (action.tournament) {
-    //     return {
-    //       ...state,
-    //       originalTournament: sortBy(action.tournament, [team => team.team]),
-    //       tournament: action.tournament
-    //     }
-    //   }
-    //   return { ...state }
-    // case types.LOAD_CONTENT:
+     case types.REQUEST_TEAMS_LIST:
+       if (action.tournament) {
+         return {
+           ...state,
+           originalTournament: sortBy(action.tournament, [team => team.team]),
+           tournament: action.tournament
+         }
+       }
+       return { ...state }
+     case types.LOAD_CONTENT:
     default:
       return state;
   }
