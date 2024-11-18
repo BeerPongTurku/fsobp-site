@@ -9,11 +9,13 @@ import fsobpLogoBorder from '../public/images/fsobp_logo_border_500.png'
 import aaltoLogo from '../public/images/aalto_logo_500.png'
 import bptLogo from '../public/images/bpt_logo.png'
 import lbpLogo from '../public/images/lbp_logo.png'
+import bpkauppalogo from '../public/images/Beerpongkauppa_Logo.png'
 
 const logos = {
   ABP: aaltoLogo,
   BPT: bptLogo,
   LBP: lbpLogo,
+  BPKauppa: bpkauppalogo
 }
 
 const contentText = (paragraph, index, array) => (
