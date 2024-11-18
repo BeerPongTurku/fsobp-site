@@ -39,6 +39,25 @@ const Home = ({ content }) => {
           <h2 className="text-center margin-1">{locationHeader}</h2>
           {bodyText.map(contentText)}
 
+          <div className="row center-xs margin-top-2 margin-bottom-2">
+            <div className="text-center margin-bottom-2">
+              <h3 className="title">{partnersTitle}</h3>
+              <div className="row center middle-xs">
+                {partners.map((partner, index) =>
+                  (
+                    <div
+                      key={partner.id}
+                      className={`col-xs-12`}>
+                      <a href={partner.link} target="_blank" rel="noopener noreferrer">
+                        <img style={{maxWidth: 350}} alt={partner.name} className="bp-images margin-1" src={logos[partner.name]} />
+                      </a>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+
           <div className="row center-xs margin-top-2">
             <div className="text-center">
               <h3 className="title">{organizersTitle}</h3>
