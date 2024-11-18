@@ -29,7 +29,7 @@ const contentText = (paragraph, index, array) => (
 )
 
 const Home = ({ content }) => {
-  const { bodyText, organizers, organizersTitle, locationHeader } = content;
+  const { bodyText, organizers, organizersTitle, partnersTitle, partners, locationHeader } = content;
   return (
     <div className="page-wrapper text-center line-height-high" >
       <div className="row center-xs" >
