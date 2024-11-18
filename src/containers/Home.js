@@ -15,7 +15,7 @@ const logos = {
   ABP: aaltoLogo,
   BPT: bptLogo,
   LBP: lbpLogo,
-  BPKauppa: bpkauppalogo
+  BeerPongKauppa: bpkauppalogo
 }
 
 const contentText = (paragraph, index, array) => (
