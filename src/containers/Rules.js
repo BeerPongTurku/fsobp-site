@@ -14,7 +14,7 @@ const Rules = () => {
       </div>
       <div>
         <h4 className="text_left ">Game Setup</h4>
-        <p><strong>Cup Formation</p></strong>
+        <p><strong>Cup Formation</strong></p>
         <ol>
           <li>10 cups per team</li>
           <li>Starting formation is a "tight triangle" formation (rims touching), pointing towards the opposing side. BPONG Racks are used to maintain formations.</li>
