@@ -1,13 +1,14 @@
 {
   "displayFrontpage": true,
   "bodyText": [
-    "Suomen suurin Beer Pong turnaus Finnish Series of Beer Pong järjestetään jälleen syksyllä  ja tällä kertaa turnaus järjestetään ensimmäistä kertaa historiansa aikana Turussa! Pääpalkinto turnauksessa on perinteisesti 500€ arvoinen kisamatka Saksaan German Series of Beer Pong turnaukseen. Palkintoon sisältyy lennot, majoitus ja turnauslippu! Kaikkien osallitujien kesken arvotaan customoitu Beer Pong pöytä, jonka tarjoaa yhteistyökumppanimme BeerPongKauppa!",
-    "Turnaus järjestetään lauantaina 23.11.2024 kello 14.00 alkaen Turussa T-talolla. (Vanha Hämeentie 29, 20540 Turku). Turnauksen lipunmyynti alkaa 21.8. klo 18.00. <a href='https://kide.app/events/f7643fdb-268a-4572-8fec-93482531ebab' target='_blank'>Kide.Apissa</a>. Tämän yhden Suomen näyttävimmistä Beer Pong -turnauksista Early Bird -lipun hinta on vain 23 € (sis. palvelumaksun) per joukkue. Lipun hinta nousee 26 euroon 1.10. alkaen, joten toimi nopeasti! Lipun hinta sisältää osallistumisen turnaukseen ja sisäänpääsyn jatkobileisiin molemmille pelaajille. Turnaukseen mahtuu osallistumaan 96 joukkuetta.",
-    "Turnauksen virallisena jatkopaikka toimii Night Club Vegas, johon turnaukseen osallistujilla on vapaa pääsy!",
-    "Turnauksen järjestävät Beer Pong Turku ry, Aalto Beer Pong ry ja Lappeenranta Beer Pong ry. Turnauksessa käytetään virallisia World Series of Beer Pong pelisääntöjä, jotka löytyvät <a href='https://bpong.com/wsobp/official-rules-of-the-world-series-of-beer-pong/' target='_blank'>täältä</a>."
+    "Hei sinä beerpong pelaaja!"
+    "Suomen legendaarisin Beer Pong turnaus Finnish Series of Beer Pong palaa jälleen pääkaupunkiseudulle Otaniemeen! Pääpalkinto turnauksessa on kisamatka Saksaan jota järjestävät tahot sponsoroivat." 
+    "Turnaus järjestetään lauantaina 10.10.2026 kello 16.00 alkaen Otaniemessä OK 20 alakerrassa. (Otakaari 20, 02150 Espoo). Turnauksen lipunmyynti alkaa 1.9. klo 18.00." http://ilmo.aaltobeerpong.fi/events/fsobp2026
+    "Tämän yhden Suomen näyttävimmistä Beer Pong -turnauksista lipun hinta on vain 20 € per joukkue. Lipun hinta sisältää osallistumisen turnaukseen ja sisäänpääsyn jatkobileisiin molemmille pelaajille. Turnaukseen mahtuu osallistumaan 32 joukkuetta."
+    "Turnauksen järjestävät yhteistyössä Aalto Beer Pong ja Beer Pong Turku. Turnaus pelataan virallisilla World Series of Beer Pong -säännöillä. Tutustuthan <a href='https://www.beerpongturku.fi/rules' target='_blank'>sääntöihin</a>." etukäteen BPT:n sivuilla."
 
   ],
-  "locationHeader": "23.11.2024 Turun T-talolla",
+  "locationHeader": "10.10.2026 Otaniemi OK 20",
   "organizersTitle": "Pelejä järjestämässä",
   "organizers": [
     {
@@ -19,19 +20,8 @@
       "id": 2,
       "name": "BPT",
       "link": "https://www.beerpongturku.fi/"
-    },
-    {
-      "id": 3,
-      "name": "LBP",
-      "link": "https://www.facebook.com/LappeenrantaBP/"
     }
   ],
-  "partnersTitle": "Yhteistyössä",
-  "partners": [{
-      "id": 1,
-      "name": "BeerPongKauppa",
-      "link": "https://www.beerpongkauppa.fi/"
-    }],
   "contacts": "Yhteydenotot",
   "contactInformation": "info@fsobp.com",
   "endDate": "April 14, 2018, 18:00 GMT+3",
@@ -40,10 +30,6 @@
       "text": "Etusivu",
       "location": "/"
     },
-    {
-      "text": "Turnausaikataulu",
-      "location": "/teams"
-    }
   ],
   "teamsPage": {
     "header": "Joukkueet ja aikataulut",
