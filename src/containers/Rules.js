@@ -25,7 +25,7 @@ const Rules = () => {
           <ol>
             <li>1. In prelims, first possession will be determined by rock-paper-scissors. The winner gets to choose which team gets the first possession.</li>
             <li>2. The team with first possession will get one (1) shot. Each team will get two (2) shots for each turn thereafter, one shot per team member, subject to any other rules below.</li>
-          <ol>
+          </ol>
         </div>
       </div>
     </div>
