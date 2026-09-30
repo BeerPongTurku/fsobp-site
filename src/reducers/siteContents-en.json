@@ -27,10 +27,6 @@
     {
       "text": "Home",
       "location": "/"
-    },
-    {
-      "text": "Schedule",
-      "location": "/teams"
     }
   ],
   "teamsPage": {
