@@ -1,9 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { changeLanguage } from '../actions/contentActions';
-import DangerousContent from '../components/DangerousContent';
-import { getYear } from '../helpers'
 
 const Rules = () => {
   return (
