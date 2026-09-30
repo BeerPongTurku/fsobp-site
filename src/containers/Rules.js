@@ -10,10 +10,10 @@ const Rules = () => {
         <h2 className="text_left ">Official Beer Pong Tournament Rules for Finnish Series of Beer Pong</h2>
       </div>
       <div>
-        <h4 className="text_left ">Game Setup</h2>
+        <h4 className="text_left ">Game Setup</h4>
       </div>
       <div>
-        <h4 className="text_left ">Game Setup</h2>
+        <h4 className="text_left ">Game Setup</h4>
         <p><strong>Cup Formation</p></strong>
         <ol>
           <li>10 cups per team</li>
