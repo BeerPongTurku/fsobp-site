@@ -44,7 +44,7 @@ const Home = ({ content }) => {
                   (
                     <div
                       key={organizer.id}
-                      className={`col-xs-12 col-sm-4`}
+                      className={`col-xs-12 col-sm`}
                     >
                       <a href={organizer.link} target="_blank" rel="noopener noreferrer">
                         <img alt={organizer.name} className="bp-images margin-1" src={logos[organizer.name]} />
