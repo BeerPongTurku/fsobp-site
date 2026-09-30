@@ -8,14 +8,11 @@ import { getYear } from '../helpers'
 import fsobpLogoBorder from '../public/images/fsobp_logo_border_500.png'
 import aaltoLogo from '../public/images/aalto_logo_500.png'
 import bptLogo from '../public/images/bpt_logo.png'
-import lbpLogo from '../public/images/lbp_logo.png'
-import bpkauppalogo from '../public/images/Beerpongkauppa_Logo.png'
+
 
 const logos = {
   ABP: aaltoLogo,
   BPT: bptLogo,
-  LBP: lbpLogo,
-  BeerPongKauppa: bpkauppalogo
 }
 
 const contentText = (paragraph, index, array) => (
@@ -29,7 +26,7 @@ const contentText = (paragraph, index, array) => (
 )
 
 const Home = ({ content }) => {
-  const { bodyText, organizers, organizersTitle, partnersTitle, partners, locationHeader } = content;
+  const { bodyText, organizers, organizersTitle, locationHeader } = content;
   return (
     <div className="page-wrapper text-center line-height-high" >
       <div className="row center-xs" >
@@ -39,7 +36,7 @@ const Home = ({ content }) => {
           <h2 className="text-center margin-1">{locationHeader}</h2>
           {bodyText.map(contentText)}
 
-          <div className="row center-xs margin-top-2 margin-bottom-2">
+          /*<div className="row center-xs margin-top-2 margin-bottom-2">
             <div className="text-center margin-bottom-2">
               <h3 className="title">{partnersTitle}</h3>
               <div className="row center middle-xs">
@@ -56,7 +53,7 @@ const Home = ({ content }) => {
                 }
               </div>
             </div>
-          </div>
+          </div>*/
 
           <div className="row center-xs margin-top-2">
             <div className="text-center">
