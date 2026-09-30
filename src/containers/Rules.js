@@ -2,7 +2,7 @@ import React from 'react';
 
 const Rules = () => {
   return (
-    <div className="rule_page page-wrapper line-height-high" >
+    <div className="rule_page page-wrapper row center-xs line-height-high" >
       <div className="row center-xs" >
         <h1 className="text-center margin-1">Finnish Series of Beer Pong Rules</h1>
       </div>
