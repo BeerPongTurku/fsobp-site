@@ -3,7 +3,7 @@
   "bodyText": [
     "Hey, Beer Pong player!"
     "Finland’s most legendary Beer Pong tournament, the Finnish Series of Beer Pong, is returning to the Helsinki metropolitan area, to Otaniemi! The main prize of the tournament is a partly sponsored trip to Germany to compete in a tournament."
-    "The tournament will be held on Saturday, 10.10.2026, starting at 16:00 at OK 20 in Otaniemi, downstairs (Otakaari 20, 02150 Espoo). Ticket sales for the tournament will begin on 1.9. at 18:00. here http://ilmo.aaltobeerpong.fi/events/fsobp2026"
+    "The tournament will be held on Saturday, 10.10.2026, starting at 16:00 at OK 20 in Otaniemi, downstairs (Otakaari 20, 02150 Espoo). Ticket sales for the tournament will begin on 1.9. at 18:00. in  <a href='http://ilmo.aaltobeerpong.fi/events/fsobp2026' target='_blank'>ABP's shop</a>"
     "The ticket price for one of Finland’s most spectacular Beer Pong tournaments is only €20 per team. The ticket includes participation in the tournament as well as entry to the afterparty for both players. The tournament has space for 32 teams."
     "The tournament is organized jointly by Aalto Beer Pong and Beer Pong Turku. The tournament will be played according to the official World Series of Beer Pong rules. Please familiarize yourself with the <a href='https://www.beerpongturku.fi/rules/' target='_blank'>rules.</a> in advance on the BPT website"
   ],
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "name": "BPT",
-      "link": "https://www.facebook.com/BeerPongTurku/"
+      "link": "https://www.beerpongturku.fi/"
     }
   ],
   "contacts": "Contacts",
