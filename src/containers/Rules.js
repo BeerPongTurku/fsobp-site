@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useEffect, useState } from "react";
 
-export default function DocPage() {
+export default function Rules() {
   const [html, setHtml] = useState("");
 
   useEffect(() => {
@@ -17,4 +17,3 @@ export default function DocPage() {
     </div>
   );
 }
-export default Rules;
