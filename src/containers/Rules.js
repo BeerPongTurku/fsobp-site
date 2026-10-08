@@ -6,7 +6,7 @@ export default function Rules() {
   const [html, setHtml] = useState("");
 
   useEffect(() => {
-    fetch("/public/fsobp_rules.html")
+    fetch("/fsobp_rules.html")
       .then((res) => res.text())
       .then(setHtml);
   }, []);
