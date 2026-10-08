@@ -28,6 +28,10 @@
     {
       "text": "Etusivu",
       "location": "/"
+    },
+     {
+      "text": "Säännöt",
+      "location": "/rules"
     }
   ],
   "teamsPage": {
